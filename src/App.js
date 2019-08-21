@@ -36,11 +36,13 @@ class App extends Component {
     }) });
   }
 
+  // Deletes a todo item
   delTodo = (id) => {
     this.setState({ todos: [...this.state.todos.filter(todo => todo.id 
       !== id)] });
   }
 
+  // Returns the items to HTML
   render() {
     return (
       <div className="App">
